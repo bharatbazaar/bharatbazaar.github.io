@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/icon" href="image/logo.png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Bharat Bazaar by Bhartiya Coders - Maggi" />
+        <meta
+            name="keywords"
+            content="Bharat Bazaar, Bhartiya Coders, groceries, fresh fruits, vegetables, online grocery shopping, fresh produce, Bharat, India, maggi, noodles" />
+
+        <meta name="author" content="Bhartiya Coders" />
+        <meta name="robots" content="index, follow" />
+        <meta
+            name="og:title"
+            content="Bharat Bazaar by Bhartiya Coders, Maggi" />
+        <meta
+            name="og:description"
+            content="Bharat Bazaar by Bhartiya Coders - Maggi" />
+        <meta name="og:image" content="image/logo.png" />
+
+        <title>Maggi - Bharat Bazaar</title>
+
+        <!-- CSS Stylesheet Link -->
+        <link rel="stylesheet" href="css/product_page.css" />
+        <!--Font Links-->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar-left">
+                <div class="logo">
+                    <img src="image/logo.png" />
+                    <a href="index.html">Bharat Bazaar</a>
+                </div>
+            </nav>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="search.html">Products</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <nav class="navbar-right">
+                <span class="material-symbols-rounded" id="menu-btn">
+                    menu
+                </span>
+
+                <a href="search.html">
+                    <span class="material-symbols-rounded" id="search-btn">
+                        search
+                    </span>
+                </a>
+                <a href="cart.html">
+                    <span
+                        class="material-symbols-rounded"
+                        id="shopping-cart-btn">
+                        shopping_cart
+                    </span>
+                </a>
+                <a href="login.html">
+                    <span class="material-symbols-rounded" id="profile-btn">
+                        person
+                    </span>
+                </a>
+            </nav>
+        </header>
+
+        <div class="product-container">
+            <div class="product-image" onclick="toggleModal()">
+                <img
+                    src="image/8.1.png"
+                    alt="MAGGI 2-minute Instant Noodles, 
+					Masala Noodles with Goodness of Iron, 
+					Made with Choicest Quality Spices, Favourite 
+					Masala Taste, 70 grams Pouch"
+                    title="Click for more Images" />
+            </div>
+            <div class="modal-background" onclick="toggleModal()"></div>
+            <div class="modal">
+                <span class="close" id="close">&times;</span>
+                <div class="slider">
+                    <div class="slides">
+                        <!--radio buttons start-->
+                        <input type="radio" name="radio-btn" id="radio1" />
+                        <input type="radio" name="radio-btn" id="radio2" />
+                        <input type="radio" name="radio-btn" id="radio3" />
+                        <input type="radio" name="radio-btn" id="radio4" />
+                        <input type="radio" name="radio-btn" id="radio5" />
+                        <!--radio buttons end-->
+                        <!--slide images start-->
+                        <div class="slide first">
+                            <img src="image/8.2.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="image/8.3.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="image/8.4.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="image/8.5.png" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="image/8.6.png" alt="" />
+                        </div>
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                        </div>
+                        <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h1 class="product-name">Maggi, 70 grams</h1>
+                <p class="general">From Nestle India Limited</p>
+                <p class="general">In Grocery Category</p>
+                <div class="product_mrp_section">
+                    <p class="mrp">MRP: ₹ 14/-</p>
+                    <p class="offer">Save: ₹ 1/- (-7% off)</p>
+                    <p class="price">₹ 13/-</p>
+                </div>
+                <div class="delivery">
+                    <p class="general">
+                        FREE delivery on orders above ₹499/- of Grocery
+                    </p>
+                    <p class="in_stock">In Stock</p>
+
+                    <div class="general order">
+                        <form>
+                            Quantity :
+                            <input
+                                type="number"
+                                class="quantity-input"
+                                value="1" />
+                        </form>
+                        <button class="btn cart-btn">Add to cart</button>
+                    </div>
+                    <button class="btn buy-btn">Buy now</button>
+                </div>
+            </div>
+        </div>
+        <section class="product-overview">
+            <h1 class="heading">Product <span>Overview</span></h1>
+            <div class="box">
+                <ul class="general">
+                    <li>
+                        INSTANT MASALA NOODLES: Relish your favorite masala
+                        taste with MAGGI 2-Minute Instant Noodle.
+                    </li>
+                    <li>
+                        GOODNESS OF IRON: Each serving (70 g) of MAGGI Masala
+                        Noodles provides 15% of the daily iron requirement.
+                    </li>
+
+                    <li>
+                        FAVOURITE MASALA TASTE: MAGGI 2-Minute Masala Instant
+                        Noodles are made with the choicest quality spices
+                    </li>
+                    <li>
+                        TRULY GOOD: Pick the truly good choice with MAGGI Masala
+                        Noodles.
+                    </li>
+                    <li>EASY TO PREPARE: MAGGI Noodles are easy to prepare.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="imp-info">
+            <h1 class="heading">Important <span>Information</span></h1>
+            <div class="box">
+                <p class="sub-title">Ingredients:</p>
+                <p class="general">
+                    NOODLES: Refined wheat flour (Maida), Palm oil, Iodized
+                    salt, Wheat gluten, Thickeners (508 and 412), Acidity
+                    regulators (501(i) and 500(i)) and Humectant (451(i)).
+                    MASALA TASTEMAKER: Mixed spices (25.6%) (Onion powder,
+                    Coriander powder, Refined wheat flour (Maida), Hydrolyzed
+                    groundnut protein, Sugar, Palm oil, Starch, Iodized salt,
+                    Thickener (508), Flavor enhancer (635), Toasted onion
+                    flakes, Acidity regulator (330), Colour (150d), Mineral and
+                    Wheat gluten. Allergen Note: Contains Wheat and Nut. May
+                    contain Milk, Mustard, Oats and Soy.
+                </p>
+
+                <p class="sub-title">Directions:</p>
+                <p class="general">
+                    Step 1: Break the noodle cake into 4 parts. Step 2: Add
+                    noodles and TASTEMAKER to 210 ml (approx. 1 cup) of boiling
+                    water. Step 3: Cook for 2 minutes in an open pan. Stir
+                    occasionally. Do not drain remaining water. Hold for 1 min
+                    after cooking. Serve hot.
+                </p>
+
+                <p class="sub-title">Legal Disclaimer:</p>
+                <p class="general">
+                    Actual product packaging and materials may contain more and
+                    different information than what is shown on our app or
+                    website. We recommend that you do not rely solely on the
+                    information presented here and that you always read labels,
+                    warnings, and directions before using or consuming a
+                    product.
+                </p>
+            </div>
+        </section>
+        <section class="product-description">
+            <h1 class="heading">Product <span>Description</span></h1>
+            <div class="box">
+                <ul class="general">
+                    <li>
+                        MAGGI 2-Minute Instant Masala Noodles is a favorite
+                        among people of all ages.
+                    </li>
+
+                    <li>
+                        MAGGI Masala instant noodles now come with the goodness
+                        of iron. Each portion (70g) of MAGGI masala noodles
+                        provides you with 15% of your daily iron requirement. It
+                        is just the perfect choice for those who need a quick
+                        and satisfying meal.
+                    </li>
+
+                    <li>
+                        MAGGI instant noodles are made with the choicest quality
+                        spices and ingredients to provide a great taste and
+                        experience.
+                    </li>
+
+                    <li>
+                        Usage instructions: Prepare a delicious meal in just 2
+                        minutes with MAGGI – boil 1 cup of water and add the
+                        tastemaker along with the noodle cake broken into 4
+                        pieces. Cook for 2 minutes in an open pan, while you
+                        stir occasionally. Do not drain the remaining water.
+                        Garnish with your favorite veggies and serve hot.
+                    </li>
+
+                    <li>
+                        Storage instructions: Store in a cool, dry and hygienic
+                        place to protect from insects, pests and strong odors.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="from-the-manufacturer">
+            <h1 class="heading">From <span>Manufacturer</span></h1>
+            <div class="box">
+                <img src="image/8.7.png" />
+            </div>
+            <p class="sub-title">Your go-to meal!</p>
+            <div class="images box">
+                <img src="image/8.8.png" />
+                <img src="image/8.9.png" />
+                <img src="image/8.10.png" />
+            </div>
+            <p class="sub-title">How To Prepare:</p>
+            <div class="images box">
+                <img src="image/8.11.png" />
+                <img src="image/8.12.png" />
+                <img src="image/8.13.png" />
+            </div>
+            <div class="box">
+                <img src="image/8.14.png" />
+            </div>
+        </section>
+
+        <div class="back-to-top">
+            <button class="btn" id="back-to-top-btn">
+                <span class="material-symbols-rounded"> north </span>
+            </button>
+        </div>
+
+        <section class="footer" id="contact">
+            <div class="box-container">
+                <div class="box">
+                    <div class="logo">
+                        <img src="image/logo.png" />
+                        <a href="index.html">Bharat Bazaar</a>
+                    </div>
+                    <p>
+                        Feel free to follow us on social media handles all the
+                        links are given below
+                    </p>
+                    <div class="share">
+                        <a
+                            href="https://chat.whatsapp.com/K9tDOiqhTbpF7DapzarXUj"
+                            target="_blank"
+                            class="bi bi-whatsapp"></a>
+                        <a
+                            href="https://www.instagram.com/_bharatbazaar_/"
+                            target="_blank"
+                            class="bi bi-instagram"></a>
+                        <a
+                            href="https://www.facebook.com/profile.php?id=61560546218212"
+                            target="_blank"
+                            class="bi bi-facebook"></a>
+                        <a
+                            href="https://x.com/_bharatbazaar_"
+                            target="_blank"
+                            class="bi bi-twitter-x"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Home</a
+                    >
+                    <a href="search.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Products</a
+                    >
+                    <a href="profile.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Profile</a
+                    >
+                    <a href="cart.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Cart</a
+                    >
+                </div>
+                <div class="box">
+                    <h3>Contact Us</h3>
+                    <a href="tel:+917644030153" target="_blank" class="links"
+                        ><i class="bi bi-telephone-fill"></i>Telephone 1</a
+                    >
+                    <a href="tel:+919608015097" target="_blank" class="links"
+                        ><i class="bi bi-telephone-fill"></i>Telephone 2</a
+                    >
+                    <a
+                        href="mailto:codersbhartiya@gmail.com"
+                        target="_blank"
+                        class="links"
+                        ><i class="bi bi-envelope-fill"></i>Mail Us</a
+                    >
+                    <a
+                        href="https://bharatbazaar.github.io"
+                        target="_blank"
+                        class="links"
+                        ><i class="bi bi-globe2"></i>Our Website</a
+                    >
+                </div>
+            </div>
+            <div class="credits">
+                <div class="documents">
+                    <a href="tac.html">Terms and Conditions</a>
+                    |
+                    <a href="pp.html">Privacy Policy</a>
+                </div>
+                <div class="year">
+                    <span class="bi bi-c-circle"></span> 2024 All rights
+                    reserved.
+                </div>
+                <div class="makers">
+                    Crafted by <span class="team">Bhartiya Coders</span> with
+                    <span class="bi bi-suit-heart-fill heart"></span> and code.
+                </div>
+            </div>
+        </section>
+        <script src="js/product_page.js"></script>
+    </body>
+</html>

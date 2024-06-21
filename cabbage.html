@@ -1,0 +1,315 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/icon" href="image/logo.png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Bharat Bazaar by Bhartiya Coders - Cabbage" />
+        <meta
+            name="keywords"
+            content="Bharat Bazaar, Bhartiya Coders, groceries, fresh fruits, vegetables, online grocery shopping, fresh produce, Bharat, India, cabbage" />
+
+        <meta name="author" content="Bhartiya Coders" />
+        <meta name="robots" content="index, follow" />
+        <meta
+            name="og:title"
+            content="Bharat Bazaar by Bhartiya Coders, Cabbage" />
+        <meta
+            name="og:description"
+            content="Bharat Bazaar by Bhartiya Coders - Cabbage" />
+        <meta name="og:image" content="image/logo.png" />
+
+        <title>Cabbage - Bharat Bazaar</title>
+
+        <!-- CSS Stylesheet Link -->
+        <link rel="stylesheet" href="css/product_page.css" />
+        <!--Font Links-->
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar-left">
+                <div class="logo">
+                    <img src="image/logo.png" />
+                    <a href="index.html">Bharat Bazaar</a>
+                </div>
+            </nav>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="search.html">Products</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <nav class="navbar-right">
+                <span class="material-symbols-rounded" id="menu-btn">
+                    menu
+                </span>
+
+                <a href="search.html">
+                    <span class="material-symbols-rounded" id="search-btn">
+                        search
+                    </span>
+                </a>
+                <a href="cart.html">
+                    <span
+                        class="material-symbols-rounded"
+                        id="shopping-cart-btn">
+                        shopping_cart
+                    </span>
+                </a>
+                <a href="login.html">
+                    <span class="material-symbols-rounded" id="profile-btn">
+                        person
+                    </span>
+                </a>
+            </nav>
+        </header>
+
+        <div class="product-container">
+            <div class="product-image" onclick="toggleModal()">
+                <img
+                    src="image/15.1.png"
+                    alt="Fresh Organic Cabbage, 1 Pc"
+                    title="Click for more Images" />
+            </div>
+            <div class="modal-background" onclick="toggleModal()"></div>
+            <div class="modal">
+                <span class="close" id="close">&times;</span>
+                <div class="slider">
+                    <div class="slides">
+                        <!--radio buttons start-->
+                        <input type="radio" name="radio-btn" id="radio1" />
+                        <input type="radio" name="radio-btn" id="radio2" />
+                        <input type="radio" name="radio-btn" id="radio3" />
+                        <input type="radio" name="radio-btn" id="radio4" />
+                        <input type="radio" name="radio-btn" id="radio5" />
+                        <div class="slide first">
+                            <img src="image/15.2.png" />
+                        </div>
+                        <div class="slide">
+                            <img src="image/15.3.png" />
+                        </div>
+                        <div class="slide">
+                            <img src="image/15.4.png" />
+                        </div>
+                        <div class="slide">
+                            <img src="image/15.5.png" />
+                        </div>
+                        <div class="slide">
+                            <img src="image/15.6.png" />
+                        </div>
+                        <!--slide images end-->
+                        <!--automatic navigation start-->
+                        <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                            <div class="auto-btn5"></div>
+                        </div>
+                        <!--automatic navigation end-->
+                    </div>
+                    <!--manual navigation start-->
+                    <div class="navigation-manual">
+                        <label for="radio1" class="manual-btn"></label>
+                        <label for="radio2" class="manual-btn"></label>
+                        <label for="radio3" class="manual-btn"></label>
+                        <label for="radio4" class="manual-btn"></label>
+                        <label for="radio5" class="manual-btn"></label>
+                    </div>
+                    <!--manual navigation end-->
+                </div>
+            </div>
+
+            <div class="product-details">
+                <h1 class="product-name">Fresh Cabbage, 1 Pc</h1>
+                <p class="general">From Bharat Bazaar</p>
+                <p class="general">In Fruits and Vegetables Category</p>
+                <div class="product_mrp_section">
+                    <p class="mrp">MRP: ₹ 40/-</p>
+                    <p class="offer">Save: ₹ 16/- (-40% off)</p>
+                    <p class="price">₹ 24/-</p>
+                </div>
+                <div class="delivery">
+                    <p class="general">
+                        FREE delivery on orders above ₹499/- of Fruits and
+                        Vegetables
+                    </p>
+                    <p class="in_stock">In Stock</p>
+
+                    <div class="general order">
+                        <form>
+                            Quantity :
+                            <input
+                                type="number"
+                                class="quantity-input"
+                                value="1" />
+                        </form>
+                        <button class="btn cart-btn">Add to cart</button>
+                    </div>
+                    <button class="btn buy-btn">Buy now</button>
+                </div>
+            </div>
+        </div>
+        <section class="product-overview">
+            <h1 class="heading">Product <span>Overview</span></h1>
+            <div class="box">
+                <ul class="general">
+                    <li>1 pc pack.</li>
+                    <li>100% Certifed Organic.</li>
+                    <li>
+                        It is a good source of Vitamin K, Dietary Fiber,
+                        Calicum, Potassium and Phosphorus.
+                    </li>
+                    <li>
+                        It is also used in the preparation of dry curries,
+                        soups, manchurian or salads.
+                    </li>
+                    <li>
+                        Store in cool and dry place, away from direct sunlight.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="imp-info">
+            <h1 class="heading">Important <span>Information</span></h1>
+            <div class="box">
+                <p class="sub-title">Legal Disclaimer:</p>
+                <p class="general">
+                    Actual product packaging and materials may contain more and
+                    different information than what is shown on our app or
+                    website. We recommend that you do not rely solely on the
+                    information presented here and that you always read labels,
+                    warnings, and directions before using or consuming a
+                    product.
+                </p>
+            </div>
+        </section>
+        <section class="product-description">
+            <h1 class="heading">Product <span>Description</span></h1>
+            <div class="box">
+                <ul class="general">
+                    <li>
+                        Cabbage is a sweet flavored, with a smooth and dense
+                        leafy layer.
+                    </li>
+
+                    <li>
+                        It can be consumed as a vegetable curry or fried dish
+                        along with rice or rotis.
+                    </li>
+
+                    <li>
+                        It is often cooked along with other vegetables or added
+                        in salads for a delectable taste.
+                    </li>
+
+                    <li>
+                        It is a good source of Vitamin K, Dietary Fiber,
+                        Calicum, Potassium and Phosphorus.
+                    </li>
+
+                    <li>
+                        We source high quality Cabbage and deliver it fresh at
+                        your door step.
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <div class="back-to-top">
+            <button class="btn" id="back-to-top-btn">
+                <span class="material-symbols-rounded"> north </span>
+            </button>
+        </div>
+        <section class="footer" id="contact">
+            <div class="box-container">
+                <div class="box">
+                    <div class="logo">
+                        <img src="image/logo.png" />
+                        <a href="index.html">Bharat Bazaar</a>
+                    </div>
+                    <p>
+                        Feel free to follow us on social media handles all the
+                        links are given below
+                    </p>
+                    <div class="share">
+                        <a
+                            href="https://chat.whatsapp.com/K9tDOiqhTbpF7DapzarXUj"
+                            target="_blank"
+                            class="bi bi-whatsapp"></a>
+                        <a
+                            href="https://www.instagram.com/_bharatbazaar_/"
+                            target="_blank"
+                            class="bi bi-instagram"></a>
+                        <a
+                            href="https://www.facebook.com/profile.php?id=61560546218212"
+                            target="_blank"
+                            class="bi bi-facebook"></a>
+                        <a
+                            href="https://x.com/_bharatbazaar_"
+                            target="_blank"
+                            class="bi bi-twitter-x"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Home</a
+                    >
+                    <a href="search.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Products</a
+                    >
+                    <a href="profile.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Profile</a
+                    >
+                    <a href="cart.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Cart</a
+                    >
+                </div>
+                <div class="box">
+                    <h3>Contact Us</h3>
+                    <a href="tel:+917644030153" target="_blank" class="links"
+                        ><i class="bi bi-telephone-fill"></i>Telephone 1</a
+                    >
+                    <a href="tel:+919608015097" target="_blank" class="links"
+                        ><i class="bi bi-telephone-fill"></i>Telephone 2</a
+                    >
+                    <a
+                        href="mailto:codersbhartiya@gmail.com"
+                        target="_blank"
+                        class="links"
+                        ><i class="bi bi-envelope-fill"></i>Mail Us</a
+                    >
+                    <a
+                        href="https://bharatbazaar.github.io"
+                        target="_blank"
+                        class="links"
+                        ><i class="bi bi-globe2"></i>Our Website</a
+                    >
+                </div>
+            </div>
+            <div class="credits">
+                <div class="documents">
+                    <a href="tac.html">Terms and Conditions</a>
+                    |
+                    <a href="pp.html">Privacy Policy</a>
+                </div>
+                <div class="year">
+                    <span class="bi bi-c-circle"></span> 2024 All rights
+                    reserved.
+                </div>
+                <div class="makers">
+                    Crafted by <span class="team">Bhartiya Coders</span> with
+                    <span class="bi bi-suit-heart-fill heart"></span> and code.
+                </div>
+            </div>
+        </section>
+        <script src="js/product_page.js"></script>
+    </body>
+</html>

@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="icon" type="image/icon" href="image/logo.png" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Welcome to Bharat Bazaar by Bhartiya Coders" />
+        <meta
+            name="keywords"
+            content="Bharat Bazaar, Bhartiya Coders, groceries, fresh fruits, vegetables, online grocery shopping, fresh produce, Bharat, India, sign, up, in, login, create, acoount" />
+
+        <meta name="author" content="Bhartiya Coders" />
+        <meta name="robots" content="index, follow" />
+        <meta
+            name="og:title"
+            content="Welcome to Bharat Bazaar by Bhartiya Coders" />
+        <meta
+            name="og:description"
+            content="Welcome to Bharat Bazaar by Bhartiya Coders" />
+        <meta name="og:image" content="image/logo.png" />
+
+        <title>Welcome to Bharat Bazaar</title>
+        <link rel="stylesheet" href="css/login.css" />
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+        <title>Login</title>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="navbar-left">
+                <div class="logo">
+                    <img src="image/logo.png" />
+                    <a href="index.html">Bharat Bazaar</a>
+                </div>
+            </nav>
+            <nav class="navbar">
+                <a href="index.html">Home</a>
+                <a href="search.html">Products</a>
+                <a href="#contact">Contact Us</a>
+            </nav>
+            <nav class="navbar-right">
+                <span class="material-symbols-rounded" id="menu-btn">
+                    menu
+                </span>
+
+                <a href="search.html">
+                    <span class="material-symbols-rounded" id="search-btn">
+                        search
+                    </span>
+                </a>
+                <a href="cart.html">
+                    <span
+                        class="material-symbols-rounded"
+                        id="shopping-cart-btn">
+                        shopping_cart
+                    </span>
+                </a>
+            </nav>
+        </header>
+        <div class="container" id="container">
+            <div class="form-container register">
+                <form id="register-form">
+                    <h1>Create My Account</h1>
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Name"
+                        autocapitalize="off"
+                        autocomplete="on" />
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Email"
+                        autocapitalize="off"
+                        autocomplete="on" />
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="Phone Number"
+                        pattern="\d*"
+                        inputmode="numeric" />
+
+                    <div class="password-container">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Password"
+                            autocapitalize="off"
+                            autocomplete="on" />
+                        <span
+                            class="material-symbols-rounded"
+                            id="toggle-password"
+                            >visibility</span
+                        >
+                    </div>
+
+                    <input
+                        type="text"
+                        id="address"
+                        placeholder="Address"
+                        maxlength="80"
+                        autocomplete="on"
+                        autocapitalize="off" />
+                    <button class="btn" type="submit">Create My Account</button>
+                </form>
+            </div>
+
+            <div class="form-container sign-in">
+                <form id="login-form">
+                    <h1>Sign In</h1>
+                    <input
+                        type="text"
+                        id="login-email-phone"
+                        placeholder="Email / Phone" />
+                    <div class="password-container">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Password"
+                            autocapitalize="off"
+                            autocomplete="on" />
+                        <span
+                            class="material-symbols-rounded"
+                            id="toggle-password"
+                            >visibility</span
+                        >
+                    </div>
+                    <a href="#">Forget Your Password?</a>
+                    <button class="btn" type="submit">Sign In</button>
+                </form>
+            </div>
+            <div class="toggle-container">
+                <div class="toggle">
+                    <div class="toggle-panel toggle-left">
+                        <h1>Welcome to Bharat Bazaar!</h1>
+                        <p>
+                            Register with your personal details to access all
+                            the features of our website.
+                        </p>
+                        <p>Already have an account?</p>
+                        <button class="hidden btn" id="login">Sign In</button>
+                    </div>
+                    <div class="toggle-panel toggle-right">
+                        <h1>Welcome Back!</h1>
+                        <p>
+                            Sign in to access your account and shop with ease.
+                        </p>
+                        <p>Don't have an account?</p>
+                        <button class="hidden btn" id="register">
+                            Create New Account
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="footer" id="contact">
+            <div class="box-container">
+                <div class="box">
+                    <div class="logo">
+                        <img src="image/logo.png" />
+                        <a href="index.html">Bharat Bazaar</a>
+                    </div>
+                    <p>
+                        Feel free to follow us on social media handles all the
+                        links are given below
+                    </p>
+                    <div class="share">
+                        <a
+                            href="https://chat.whatsapp.com/K9tDOiqhTbpF7DapzarXUj"
+                            target="_blank"
+                            class="bi bi-whatsapp"></a>
+                        <a
+                            href="https://www.instagram.com/_bharatbazaar_/"
+                            target="_blank"
+                            class="bi bi-instagram"></a>
+                        <a
+                            href="https://www.facebook.com/profile.php?id=61560546218212"
+                            target="_blank"
+                            class="bi bi-facebook"></a>
+                        <a
+                            href="https://x.com/_bharatbazaar_"
+                            target="_blank"
+                            class="bi bi-twitter-x"></a>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>Quick Links</h3>
+                    <a href="index.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Home</a
+                    >
+                    <a href="search.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Products</a
+                    >
+                    <a href="profile.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Profile</a
+                    >
+                    <a href="cart.html" class="links"
+                        ><i class="bi bi-arrow-right"></i>Cart</a
+                    >
+                </div>
+                <div class="box">
+                    <h3>Contact Us</h3>
+                    <a href="tel:+917644030153" target="_blank" class="links"
+                        ><i class="bi bi-telephone-fill"></i>Telephone 1</a
+                    >
+                    <a href="tel:+919608015097" target="_blank" class="links"
+                        ><i class="bi bi-telephone-fill"></i>Telephone 2</a
+                    >
+                    <a
+                        href="mailto:codersbhartiya@gmail.com"
+                        target="_blank"
+                        class="links"
+                        ><i class="bi bi-envelope-fill"></i>Mail Us</a
+                    >
+                    <a
+                        href="https://bharatbazaar.github.io"
+                        target="_blank"
+                        class="links"
+                        ><i class="bi bi-globe2"></i>Our Website</a
+                    >
+                </div>
+            </div>
+            <div class="credits">
+                <div class="documents">
+                    <a href="tac.html">Terms and Conditions</a>
+                    |
+                    <a href="pp.html">Privacy Policy</a>
+                </div>
+                <div class="year">
+                    <span class="bi bi-c-circle"></span> 2024 All rights
+                    reserved.
+                </div>
+                <div class="makers">
+                    Crafted by <span class="team">Bhartiya Coders</span> with
+                    <span class="bi bi-suit-heart-fill heart"></span> and code.
+                </div>
+            </div>
+        </section>
+        <script src="js/login.js"></script>
+    </body>
+</html>
