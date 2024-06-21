@@ -1,0 +1,453 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+:root {
+    --green: #046a38;
+    --theme: #ff671f;
+    --box-shadow: 0 0.5rem 1.5rem #000;
+    --border: 0.2rem solid #000;
+    --outline: 0.1rem solid #000;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+    font-family: "Poppins", Arial, sans-serif;
+    cursor: default;
+}
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+body {
+    background: #eee;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.heading {
+    text-align: center;
+    padding: 2rem 0;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    color: #000;
+}
+.heading span {
+    background: var(--theme);
+    color: #fff;
+    display: inline-block;
+    padding: 0.5rem 3rem;
+    clip-path: polygon(100% 0%, 93% 50%, 100% 99%, 0% 100%, 7% 50%, 0% 0%);
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    font-size: 1.7rem;
+    border: var(--border);
+    border-radius: 0.5rem;
+    color: #000;
+    cursor: pointer;
+    background: none;
+}
+.btn:hover {
+    cursor: pointer;
+    background: linear-gradient(to right, var(--green), #fff);
+    background-size: 200% 200%;
+    animation: animateButtonBackground 1s linear forwards;
+    color: #fff;
+}
+@keyframes animateButtonBackground {
+    0% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background: #fff;
+    box-shadow: var(--box-shadow);
+}
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.logo a {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+.logo a:hover {
+    color: var(--theme);
+    cursor: pointer;
+}
+.logo img {
+    margin-right: 0.5rem;
+    width: 4.5rem;
+    height: auto;
+}
+.header .navbar a {
+    font-size: 2rem;
+    font-weight: 500;
+    margin: 0 1rem;
+    color: #000;
+}
+
+.header .navbar a:hover {
+    color: var(--theme);
+    cursor: pointer;
+}
+.header .navbar-right span {
+    font-size: 2.5rem;
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.5rem;
+    background: #eee;
+    color: #000;
+    margin-right: 0.3rem;
+    text-align: center;
+}
+.header .navbar-right span:hover {
+    background: var(--green);
+    color: white;
+    cursor: pointer;
+}
+#menu-btn {
+    display: none;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin-top: 8.5rem;
+    width: 100vw;
+    height: 88vh;
+}
+.home .container {
+    backdrop-filter: blur(0.5rem);
+    font-weight: bold;
+    text-align: center;
+    align-self: flex-end;
+    padding-bottom: 1rem;
+    z-index: 1;
+}
+.home img {
+    width: 100vw;
+    height: 88vh;
+    position: absolute;
+    z-index: 1;
+}
+.home .container h3 {
+    color: #000;
+    font-size: 3rem;
+}
+.home .container h3 span {
+    color: var(--theme);
+}
+
+.home .container p {
+    color: #000;
+    font-size: 1.7rem;
+    padding: 1rem 0;
+    line-height: 1.8;
+}
+.features .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+}
+.features .box-container .box {
+    padding: 2rem;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.features .box-container .box:hover {
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+
+.features .box-container .box img {
+    margin: 2rem 0;
+    width: auto;
+    height: 40%;
+}
+.features .box-container .box h3 {
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: #000;
+}
+.features .box-container .box p {
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: #000;
+}
+.products .view-all {
+    text-align: center;
+}
+
+.product-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+    width: 100%;
+}
+
+.product-container .box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: default;
+    background: #fff;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    transition: 0.2s linear;
+}
+
+.product-container .box:hover {
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+.product-image {
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-image img {
+    max-width: 100%;
+    max-height: 100%;
+}
+.product-image img:hover {
+    cursor: pointer;
+}
+.product-details {
+    padding-left: 2rem;
+    text-align: left;
+}
+
+.title {
+    font-size: 2.5rem;
+}
+.general {
+    font-size: 1.5rem;
+    color: var(--light);
+}
+
+.product_mrp_section {
+    display: flex;
+    align-items: baseline;
+}
+.mrp {
+    padding-left: 0.5rem;
+    color: #f00;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.offer {
+    padding-left: 0.5rem;
+    font-size: 1.5rem;
+    color: var(--green);
+}
+.price {
+    color: #000;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.back-to-top {
+    cursor: pointer;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.back-to-top .btn {
+    background: linear-gradient(to right, var(--theme), #fff);
+    background-size: 200% 200%;
+    animation: animateButtonBackground 1s linear forwards;
+    width: 6rem;
+    height: 6rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    padding: 0;
+    color: var(--black);
+}
+.back-to-top .btn span {
+    font-size: 4rem;
+    cursor: pointer;
+}
+.back-to-top .btn:hover {
+    background: linear-gradient(to right, var(--green), #fff);
+    background-size: 200% 200%;
+    animation: animateButtonBackground 1s linear forwards;
+    color: #fff;
+    cursor: pointer;
+}
+
+.categories .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+}
+.categories .box-container .box {
+    padding: 2rem 0;
+    background: #fff;
+    border-radius: 0.5rem;
+    outline: var(--outline);
+    outline-offset: -1rem;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.categories .box-container .box:hover {
+    box-shadow: 1px 1px 10px 4px var(--green);
+}
+.categories .box-container .box .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.categories .box-container .box img {
+    width: 70%;
+    height: auto;
+}
+.categories .box-container .box h3 {
+    font-size: 2rem;
+    color: #000;
+}
+
+.footer {
+    background: #fff;
+    width: 100vw;
+    height: auto;
+}
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.5rem;
+}
+.footer .box-container .box .logo {
+    justify-content: left;
+}
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: #000;
+}
+.footer .box-container .box span {
+    color: var(--theme);
+    font-size: 2.5rem;
+    font-weight: bolder;
+}
+.footer .box-container .box a {
+    text-decoration: none;
+    color: #000;
+}
+.footer .box-container .box a:hover {
+    color: var(--theme);
+    cursor: pointer;
+}
+.footer .box-container .box h3 a {
+    text-decoration: none;
+    color: #000;
+}
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1.7rem;
+    color: #000;
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+    color: var(--theme);
+    padding-right: 0.5rem;
+}
+.footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+    cursor: pointer;
+}
+.footer .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.7rem;
+    color: #000;
+    padding: 1rem 0;
+}
+.footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 2rem;
+    color: #000;
+    margin-left: 0.2rem;
+    background: #eee;
+    text-align: center;
+    display: inline-block;
+}
+.footer .box-container .box .share a:hover {
+    background: var(--green);
+    color: #fff;
+    cursor: pointer;
+}
+.footer .credits {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: #000;
+    border-top: var(--border);
+}
+.footer .credits .documents a {
+    color: #000;
+    text-decoration: none;
+    font:
+        2rem "Arial",
+        sans-serif;
+}
+.footer .credits .documents a:hover {
+    color: #f00;
+    cursor: pointer;
+}
+.footer .credits .makers .team {
+    font-weight: bolder;
+    color: var(--theme);
+}
+.footer .credits .makers .heart {
+    font-weight: bolder;
+    color: #f00;
+}
